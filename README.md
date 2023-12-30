@@ -1,6 +1,6 @@
 # Fake Store
 
-## Api Fake Store
+## API Fake Store
 ## React - Tailwindcss
 
 
