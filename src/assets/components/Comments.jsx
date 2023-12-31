@@ -33,8 +33,8 @@ const Comments = () =>{
             <h3 className="text-2xl font-semibold">Our comments</h3>
             <div className="flex gap-4 justify-center">
                 {
-                    comments.map((comment) => (
-                        <div className="flex items-center gap-8 bg-purple-100 rounded px-6 py-4 shadow">
+                    comments.map((comment, index) => (
+                        <div key={index} className="flex items-center gap-8 bg-purple-100 rounded px-6 py-4 shadow">
                             <img className="rounded-full shadow h-16" src={`https://ui-avatars.com/api/?background=random&name=${comment.user}`} alt="User Name" />
                             <div className="space-y-1">
                                 <h3 className="text-sm font-semibold">{comment.date}</h3>
