@@ -103,7 +103,7 @@ const Products = () => {
                     )
                 }
             </article>
-            <article className="flex justify-center items-center mb-20 gap-4">
+            <article className={`flex justify-center items-center mb-20 gap-4 ${categorySelected ?  'hidden' : ''}`}>
                 <button onClick={handlePreviousPage} className="p-3 rounded-full bg-purple-600 text-white focus:ring ring-purple-500">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                         <   path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
